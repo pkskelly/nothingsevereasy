@@ -205,7 +205,7 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Controllers\TopicsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -215,8 +215,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
-    <Compile Include="Services\IDataProvider.cs" />
-    <Compile Include="Services\TopicDB.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -279,6 +277,10 @@
     <ProjectReference Include="..\nothingsevereasy.Data\nothingsevereasy.Data.csproj">
       <Project>{ba2d4cdf-8d41-469c-8c30-9b6bfbc281bb}</Project>
       <Name>nothingsevereasy.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\nothingsevereasy.Services\nothingsevereasy.Services.csproj">
+      <Project>{fd98866d-9fce-400d-aaeb-1516f9c6d065}</Project>
+      <Name>nothingsevereasy.Services</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
